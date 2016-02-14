@@ -13,8 +13,7 @@ You will be implementing bubble sort in JavaScript.  There is also a jasmine spe
 
 ### Helpful Resources 
 
-[https://en.wikipedia.org/wiki/Bubble_sort](https://en.wikipedia.org/wiki/Bubble_sort)
-
-[https://www.youtube.com/watch?v=8Kp-8OGwphY](https://www.youtube.com/watch?v=8Kp-8OGwphY)
-
-[https://study.cs50.net/bubble_sort](https://study.cs50.net/bubble_sort)
+* [https://en.wikipedia.org/wiki/Bubble_sort](https://en.wikipedia.org/wiki/Bubble_sort)
+* [https://www.youtube.com/watch?v=8Kp-8OGwphY](https://www.youtube.com/watch?v=8Kp-8OGwphY)
+* [https://study.cs50.net/bubble_sort](https://study.cs50.net/bubble_sort)
+* [http://www.sorting-algorithms.com/](http://www.sorting-algorithms.com/)
