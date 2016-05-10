@@ -4,7 +4,7 @@
   "description": "# Bubble Sort Exercise",
   "main": "bubbleSort.js",
   "scripts": {
-    "test": "mocha"
+    "test": "mocha -R nyan"
   },
   "repository": {
     "type": "git",
