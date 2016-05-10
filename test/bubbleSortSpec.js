@@ -1,5 +1,4 @@
-var bubbleSort = require("../bubbleSort"),
-    arr;
+var bubbleSort = require("../bubbleSort");
 
 describe("#bubbleSort", function(){
 
