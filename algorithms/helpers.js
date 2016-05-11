@@ -1,4 +1,4 @@
-function sort(arr, idx1, idx2) {
+function swap(arr, idx1, idx2) {
 
 }
 
@@ -7,6 +7,6 @@ function merge(arr1, arr2) {
 }
 
 module.exports = {
-  sort,
+  swap,
   merge
 }
