@@ -1,3 +1,7 @@
+'use strict'
+
+const swap = require('./helpers').swap;
+
 function bubbleSort(arr){
 
 }
@@ -10,18 +14,8 @@ function selectionSort(arr) {
 
 }
 
-function quickSort(arr) {
-
-}
-
-function mergeSort(arr) {
-
-}
-
 module.exports = {
   bubbleSort,
   insertionSort,
-  selectionSort,
-  quickSort,
-  mergeSort
+  selectionSort
 };
