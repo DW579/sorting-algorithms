@@ -1,19 +1,23 @@
-# Implementing Bubble Sort in JavaScript
+# Implementing Sorting Algorithms in Javascript
 
-# Bubble Sort Exercise
+## Part 1: Bubble Sort, Selection Sort, Insertion Sort
 
-You will be implementing bubble sort in JavaScript.  There is also a jasmine spec that you should take a look at before working on the bubble sort implementation. 
+Try to implement bubble sort, selection sort, and insertion sort (if you need a refresher on these algorithms, check out the [computer science curriculum](https://github.com/gSchool/computer-science-curriculum/blob/master/Unit-2/04-sorting-intro.md)).
 
-### Instructions
+For each of these algorithms, you'll also find it helpful to implement a `swap` function which swaps to values in an array. 
 
-1. Look at the ```spec/bubbleSortSpec.js``` spec file.  It has four very simple tests for the merge function and the mergeSort function.  Implement some more test cases if you would like __before__ implementing the bubbleSort.
-2. Look at the ```bubbleSort.js``` file.  There is one function that you need to implement to pass the specs.
-3. Implement bubble sort.  Make sure it passes all of your specs.
-4. Try to do this without looking up solutions online.
+Your goal is to get the tests for `bubbleSort`, `selectionSort`, `insertionSort`, and `swap` to pass. Note: The tests for the three searching algorithms are the same, but don't use the same implementation for each! The goal of this exercise is for you to be able to implement the different algorithms, even though they have the same effect on the arrays in the tests.
+
+## Part 2: Merge Sort, Quicksort
+
+Try to implement two more advanced sorting algorithms: merge sort and quicksort (if you need a refresher, check out the [computer science curriculum](https://github.com/gSchool/computer-science-curriculum/blob/master/Unit-3/01-sorting-revisited.md)).
+
+For merge sort, you'll find it helpful to implement a `merge` function which takes two sorted arrays and merges them into one sorted array. 
+
+Your goal is to get the tests for `mergeSort`, `quickSort`, and `merge` to pass. Note: As in Part I, don't use the same implementations for these searching algorithms!
 
 ### Helpful Resources 
 
-* [https://en.wikipedia.org/wiki/Bubble_sort](https://en.wikipedia.org/wiki/Bubble_sort)
-* [https://www.youtube.com/watch?v=8Kp-8OGwphY](https://www.youtube.com/watch?v=8Kp-8OGwphY)
-* [https://study.cs50.net/bubble_sort](https://study.cs50.net/bubble_sort)
+* [https://study.cs50.net](https://study.cs50.net)
 * [http://www.sorting-algorithms.com/](http://www.sorting-algorithms.com/)
+* [http://visualgo.net/](http://visualgo.net/)
