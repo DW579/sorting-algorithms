@@ -6,16 +6,16 @@ function bubbleSort(arr){
 
 }
 
-function insertionSort(arr) {
+function selectionSort(arr) {
 
 }
 
-function selectionSort(arr) {
+function insertionSort(arr) {
 
 }
 
 module.exports = {
   bubbleSort,
-  insertionSort,
-  selectionSort
+  selectionSort,
+  insertionSort
 };
