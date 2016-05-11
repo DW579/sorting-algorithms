@@ -14,7 +14,7 @@ Try to implement two more advanced sorting algorithms: merge sort and quicksort 
 
 For merge sort, you'll find it helpful to implement a `merge` function which takes two sorted arrays and merges them into one sorted array. 
 
-Your goal is to get the tests for `mergeSort`, `quickSort`, and `merge` to pass. Note: As in Part I, don't use the same implementations for these searching algorithms!
+Your goal is to get the tests for `mergeSort`, `quickSort`, and `merge` to pass. Note: As in Part 1, don't use the same implementations for these searching algorithms!
 
 ### Helpful Resources 
 
