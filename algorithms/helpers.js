@@ -1,14 +1,14 @@
 function swap(arr, idx1, idx2) {
-  var temp = arr[idx1];
+  let temp = arr[idx1];
   arr[idx1] = arr[idx2];
   arr[idx2] = temp;
 }
 
 function merge(arr1, arr2) {
   
-  var result = [];
-  var idx1 = 0;
-  var idx2 = 0;
+  let result = [];
+  let idx1 = 0;
+  let idx2 = 0;
 
   while (idx1 < arr1.length && idx2 < arr2.length) {
     result.push(arr1[idx1] < arr2[idx2] ? arr1[idx1++] : arr2[idx2++]);
@@ -19,10 +19,10 @@ function merge(arr1, arr2) {
 }
 
 function partition(arr, left, right){
-  var pivotValue = arr[left];
-  var partitionIndex = left;
+  let pivotValue = arr[left];
+  let partitionIndex = left;
 
-  for(var i = left+1; i <= right; i++){
+  for(let i = left+1; i <= right; i++){
     if(arr[i] < pivotValue){
       partitionIndex++;
       swap(arr, i, partitionIndex);

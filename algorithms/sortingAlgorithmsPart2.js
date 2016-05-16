@@ -5,17 +5,23 @@ const merge = require('./helpers').merge;
 const partition = require('./helpers').partition;
 
 function mergeSort(arr) {
+  if (arr.length < 2) return arr;
 
+  let mid = Math.floor(arr.length / 2);
+  let leftArr = arr.slice(0, mid);
+  let rightArr = arr.slice(mid);
+
+  return merge(mergeSort(leftArr), mergeSort(rightArr));
 }
 
 function quickSort(arr, left=0, right=arr.length - 1){
 
   if(left < right){
-   var partitionIndex = partition(arr, left, right);
+   let partitionIndex = partition(arr, left, right);
    quickSort(arr, left, partitionIndex - 1);
    quickSort(arr, partitionIndex + 1, right);
   }
-  
+
   return arr;
 }
 
