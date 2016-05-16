@@ -63,7 +63,7 @@ describe("Part 2", function() {
       expect(arr[0]).to.equal(6);
       expect(arr[7]).to.equal(4);
       expect(arr.slice(1,4).sort()).to.deep.equal([1,2,3]);
-      expect(arr.slice(5,7).sort()).to.deep.eqaul([7,8]);
+      expect(arr.slice(5,7).sort()).to.deep.equal([7,8]);
     });
 
   });

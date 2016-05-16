@@ -18,9 +18,21 @@ function merge(arr1, arr2) {
 
 }
 
-function partition(arr, left, right) {
+function partition(arr, left, right){
+  var pivotValue = arr[left];
+  var partitionIndex = left;
 
+  for(var i = left+1; i <= right; i++){
+    if(arr[i] < pivotValue){
+      partitionIndex++;
+      swap(arr, i, partitionIndex);
+    }
+  }
+  
+  swap(arr, left, partitionIndex);
+  return partitionIndex;
 }
+   
 
 module.exports = {
   swap,
