@@ -38,6 +38,36 @@ describe("Part 2", function() {
 
   });
 
+  describe("#partition", function() {
+
+    let partition = require("../algorithms/helpers").partition;
+    let arr = [];
+
+    beforeEach(function() {
+      arr = [6, 5, 3, 1, 8, 7, 2, 4];
+    });
+
+    it("sets the first element in the pivot, and returns the index of the pivot after positioning other values around it", function() {
+      expect(partition(arr, 0, 7)).to.equal(5);
+      expect(arr.indexOf(6)).to.equal(5);
+    });
+
+    it("partitions the array into two pieces on either side of the pivot", function() {
+      partition(arr,0,7);
+      expect(arr.slice(0,5).sort()).to.deep.equal([1,2,3,4,5]);
+      expect(arr.slice(6).sort()).to.deep.equal([7,8]);
+    });
+
+    it("restricts the partitioning based on left and right parameters", function() {
+      expect(partition(arr,1,6)).to.equal(4);
+      expect(arr[0]).to.equal(6);
+      expect(arr[7]).to.equal(4);
+      expect(arr.slice(1,4).sort()).to.deep.equal([1,2,3]);
+      expect(arr.slice(5,7).sort()).to.deep.eqaul([7,8]);
+    });
+
+  });
+
   describe("#quickSort", function(){
 
     let quickSort = require("../algorithms/sortingAlgorithmsPart2").quickSort;
